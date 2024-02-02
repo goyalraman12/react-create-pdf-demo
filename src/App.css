@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 10vmin; /* Reduced the size of the logo for better visual balance */
   pointer-events: none;
 }
 
@@ -15,24 +15,56 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  height: 100vh;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(
+    14px + 2vmin
+  ); /* Increased font size for better readability */
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Added some styling to the header for a cleaner look */
+h2 {
+  margin-bottom: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+p {
+  margin-top: 1rem;
+}
+
+/* Styled the link for better visibility */
+.App-link {
+  color: #61dafb;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.App-link:hover {
+  text-decoration: underline;
+}
+.buttons-container {
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+}
+
+/* Added some padding and a border to the buttons for better styling */
+button {
+  margin-top: 1rem;
+  padding: 10px 20px;
+  background-color: #61dafb;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #4fa3d1;
 }
